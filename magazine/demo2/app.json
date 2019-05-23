@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/catlog/catlog",
+    "pages/mark/mark",
+    "pages/logs/logs",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/catlog/catlog",
+        "text": "目录",
+        "iconPath": "/images/tab/catalog.png",
+        "selectedIconPath": "images/tab/catalog_selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "杂志",
+        "iconPath": "images/tab/index.png",
+        "selectedIconPath": "images/tab/index_selected.png"
+      },
+      {
+        "pagePath": "pages/mark/mark",
+        "text": "马克",
+        "iconPath": "images/tab/mark.png",
+        "selectedIconPath": "images/tab/mark_selected.png"
+      }
+    ]
+  }
+}

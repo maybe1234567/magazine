@@ -1,0 +1,6 @@
+<!--components/biimg/cmp.wxml-->
+<view >
+    <image mode='wdithFix' class='image' src='{{imgSrc}}' />
+    <text class='text'>{{mainTitle}}</text>
+
+</view>

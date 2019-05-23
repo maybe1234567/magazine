@@ -1,0 +1,16 @@
+<view class='wrapper'>
+  <view class='userBox'>
+    <view class='userInfo'>
+   
+    <image wx:if='{{authorized}}' class='userImg' src='{{userInfo.avatarUrl}}'></image>
+     <button wx:else class='logIn' open-type='getUserInfo' bindgetuserinfo='getUserInfo'>
+        <image class='image' src='/images/mark/login.png'></image>
+          <text class='text'>登录</text>      
+   </button>
+      <text class='userName'>{{userInfo.nickName}}</text>
+      <text class='city'>{{userInfo.province }}</text>
+    </view>
+  </view>
+  <d-articleList articleList='{{likeList}}'/>
+
+</view>

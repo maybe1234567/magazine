@@ -1,0 +1,59 @@
+<view class='wrapper'>
+  <text class='header'>{{articleDetail.title}}</text>
+  <view class='date-author'>
+    <text>{{articleDetail.author}}</text>
+    <text>{{articleDetail.publishTime}}</text>
+  </view>
+  <!-- <swiper autoplay interval='3000' circular>
+    <swiper-item wx:for='{{articleDetail.banner}}'>
+      <image src='{{item}}'></image>
+    </swiper-item>
+  </swiper> -->
+  <!-- <view class='myVideo'>
+    <video id="myVideo" src="{{articleDetail.video.src}}"
+      danmu-list="{{danmuList}}" enable-danmu danmu-btn controls show-mute-btn='true' enable-play-gesture></video>
+  </view> -->
+  <view class="audio">
+    <view class="audio-controler">
+
+      <image bindtap='onAudioPlay'  src='/image/icon/icon-like-solid.png'></image>
+
+    </view>
+    <view class="audio-info">
+      <view class="audio-title">
+        <text>{{articleDetail.audio.audioTitle}}</text>
+      </view>
+      <view class="audio-from">
+        <text>{{articleDetail.audio.from}}</text>
+      </view>
+      <view class="audio-progress">
+      <progress 
+        percent="20"
+        stroke-width="4"
+        color="pink"
+        active
+        border-radius='10' />
+        
+
+      </view>
+      <view class="audio-time">
+        <view>00:00</view>
+        <view>{{articleDetail.audio.duration}}</view>
+      </view>
+    </view>
+  </view>
+  <text class='content' decode='{{true}}}'>{{filter(articleDetail.content)}}</text>
+  <view class='read'>
+    <text space='ensp'>阅读量: {{articleDetail.readNum}}</text>
+  </view>
+</view>
+<wxs module='filter'>
+  var filter = function(text) {
+    if (!text) {
+      return
+    }
+    var reg = getRegExp('\\n', 'g');
+    return text.replace(reg, '\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+  }
+  module.exports = filter;
+</wxs>

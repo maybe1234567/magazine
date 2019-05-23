@@ -1,0 +1,84 @@
+.article-list {
+  padding: 3vh 5vw;
+  background-color: #fff;
+  margin-bottom: 3vh;
+}
+
+.article-list .mark {
+  background-color: #fff;
+}
+
+.article-list .mark image {
+  vertical-align: middle;
+  padding: 15rpx;
+  width: 50rpx;
+}
+
+.article-list .mark text {
+  font-size: 30rpx;
+  letter-spacing: 5rpx;
+}
+
+.article-list .image {
+  text-align: center;
+}
+
+.article-list .image image {
+  width: 90vw;
+  height: 30vh;
+}
+
+.article-list .title text {
+  font-size: 30rpx;
+  letter-spacing: 3rpx;
+}
+
+.article-list .extend {
+  margin: 15rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-list .extend text {
+  font-size: 30rpx;
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 10rpx;
+}
+
+.article-list .extend .progress {
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+}
+
+.article-list .extend .progress view {
+  width: 50rpx;
+}
+
+.article-list .extend .progress image {
+  vertical-align: middle;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.article-list .extend .progress .share-btn {
+  position: relative;
+  top: 6rpx;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: transparent;
+}
+
+.article-list .extend .progress .share-btn::after {
+  border: none;
+}
+
+.article-list .extend .progress .share-btn image {
+  position: relative;
+  left: -25rpx;
+  bottom: 25rpx;
+}

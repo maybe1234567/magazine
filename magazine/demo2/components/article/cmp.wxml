@@ -1,0 +1,30 @@
+<view class='wrapper'>
+  <view class='head'>
+    <image class='image' src='{{articleDetail.mark.avatar}}'></image>
+    <text class='text'>{{articleDetail.mark.people}}</text>
+    <text class='text'>等{{articleDetail.mark.count}}</text>
+    <text class='text'>人</text>
+    <text class='text'>马克了</text>
+  </view>
+  <view>
+    <d-bigImg wx:if='{{articleDetail.type==0}}' imgSrc='{{articleDetail.imgArray}}' mainTitle='{{articleDetail.mainTitle}}' />
+
+    <d-pureText wx:if='{{articleDetail.type== 4}}' subHead='{{articleDetail.subHead}}' mainTitle='{{articleDetail.mainTitle}}' />
+    <d-video wx:if='{{articleDetail.type== 3}}' mainTitle='{{articleDetail.mainTitle}}' src='{{articleDetail.video.src}}' poster='{{articleDetail.video.poster}}' duration='{{articleDetail.video.duration}}' mainTitle='{{articleDetail.mainTitle}}' videoId='{{articleDetail.video.id}}'
+    />
+    <d-nineImg wx:if='{{articleDetail.type== 1}}' imgSrc='{{articleDetail.imgArray}}' mainTitle='{{articleDetail.mainTitle}}' />
+    <d-imgText wx:if='{{articleDetail.type== 2}}' mainTitle='{{articleDetail.mainTitle}}' imgSrc='{{articleDetail.imgArray}}' subHead='{{articleDetail.subHead}}' />
+  </view>
+
+  <view class='controller-container'>
+    <view>
+      <d-tag tag="{{articleDetail.tag}}" tagId="{{articleDetail.tagId}}" />
+    </view>
+    <view class='controller-box'>
+      <d-share class='share' />
+      <d-more class='box' tag="{{articleDetail.tag}}" />
+      <d-like class='box' like="{{likeStatus}}" catch:like='onLike' />
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,10 @@
+<view class='wrapperBox'>
+
+<d-article class='article' wx:for="{{articleList}}" articleDetail="{{item}}" wx:key="{{artId}}" />
+<d-loading hidden='{{!loading}}' />
+<view class='wrapper'>
+  <view class='box' wx:if="{{noMoreData}}">
+    <text>没有更多了</text>
+  </view>
+</view>
+</view>

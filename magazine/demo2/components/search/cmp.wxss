@@ -1,0 +1,19 @@
+.wrapper{
+  width: 90vw;
+  height: 100rpx;
+
+}
+.input{
+  padding-left: 10rpx;
+  margin-right: 25rpx;
+  font-size: 35rpx;
+  display: inline-block;
+  width: 85%;
+  height: 60rpx;
+  background-color: #eee;
+  vertical-align: middle;
+
+}
+.text{
+  font-size: 30rpx;
+}

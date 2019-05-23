@@ -1,0 +1,11 @@
+.sub{
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  padding: 0 10rpx;
+  font-size: 30rpx;
+}
+.sub.subscribe{
+  background-color: #fff;
+  color: #000;
+}

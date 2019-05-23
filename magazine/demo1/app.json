@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/third/third",
+    
+    "pages/second/second",
+    
+    "pages/articleDetail/articleDetail",
+
+    
+    "pages/index/index",
+    "pages/type/type",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00b26a",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

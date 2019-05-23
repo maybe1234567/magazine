@@ -1,0 +1,11 @@
+.wrapper {
+  background-color: #fff;
+  padding-left: 25rpx;
+  padding-top: 15rpx;
+  margin-top: 10rpx;
+}
+
+.tag {
+  display: inline-block;
+  margin: 10rpx;
+}

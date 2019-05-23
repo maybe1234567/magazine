@@ -1,0 +1,4 @@
+
+  <button open-type='share' class='shreBtn'>
+    <image class='image' src='/images/mark/relay.png'></image>
+  </button>

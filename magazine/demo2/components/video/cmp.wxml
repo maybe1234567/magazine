@@ -1,0 +1,22 @@
+<!-- components/video/cmp.wxml -->
+<view class='wrapper'>
+  <view class='video-box'>
+    <video hidden='{{showPoster}}' class='video' controls bindended='videoEnd' enable-danmu danmu-btn id="{{videoId}}" src="{{src}}"></video>
+
+    <view hidden='{{!showPoster}}' class='cover'>
+      <image class='coverImg' src="{{poster}}"></image>
+
+      <view class='video-cover' catchtap='onPlay'>
+        <image class='controller' src='/components/video/images/play.png'></image>
+        <text class='duration'>{{duration}}</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="mainTitle">
+    <text>{{mainTitle}}</text>
+  </view>
+  <view class="mask" catchtap='onMaskTap' hidden='{{showPoster}}' />
+
+</view>

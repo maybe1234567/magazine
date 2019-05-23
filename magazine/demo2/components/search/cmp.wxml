@@ -1,0 +1,8 @@
+<view class='wrapper'>
+  <input class='input' type='text' placeholder='青芒什么都有' value='{{value}}' bindconfirm='onSearch'  bindinput='onInput'></input>
+  <text 
+      class='text' 
+      catchtap='onSearch'
+      word ='{{searchWord}}'>搜索</text>
+
+</view>

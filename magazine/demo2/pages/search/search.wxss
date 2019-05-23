@@ -1,0 +1,22 @@
+.wrapper{
+  width: 100vw;
+  margin: 0 auto;
+}
+.wrapper .search{
+  width: 90vw;
+  display: block;
+  margin: 0 auto;
+}
+.wrapper .title{
+  padding: 0 35rpx;
+  font-size: 30rpx;
+  
+}
+.wrapper .title .tag{
+
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.wrapper .content{
+  padding: 5rpx 0;
+} 

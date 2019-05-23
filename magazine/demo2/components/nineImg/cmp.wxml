@@ -1,0 +1,7 @@
+<view class='wrapper'>
+  <view class='imgBox'>
+    <image  catchtap='onTap' wx:if='{{index<9}}' wx:for="{{imgSrc}}" wx:key='this' data-index='{{index}}' src='{{item}}' />
+    <text bindtap='getMoreImg' class='imgNum' wx:if = '{{imgSrc.length>9}}'>{{imgSrc.length}}</text>
+  </view>
+  <view class='mainText'>{{mainTitle}}</view>
+</view>

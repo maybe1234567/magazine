@@ -1,0 +1,22 @@
+.tag{
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx 0;
+}
+.tagText{
+  font-size: 28rpx;
+  color: #00b62a;
+}
+
+.wrapper{
+  width: 700rpx;
+  margin: 50rpx auto;
+}
+.wrapper .text{
+  font-size: 35rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .text .magazine{
+  font-weight: bold;
+}

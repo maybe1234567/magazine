@@ -1,0 +1,61 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.5",
+	"appid": "wx08aa45e9068800f5",
+	"projectname": "demo2",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "12",
+					"pathName": "pages/search/search",
+					"query": "id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "读书",
+					"pathName": "pages/search/search",
+					"query": "SearchWold=读书",
+					"scene": null
+				}
+			]
+		}
+	}
+}

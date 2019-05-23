@@ -1,0 +1,10 @@
+/* components/biimg/cmp.wxss */
+
+.image{
+  width: 700rpx;
+}
+.text{
+  padding:  0 30rpx;
+  font-size: 40rpx;
+  color: pink;
+}

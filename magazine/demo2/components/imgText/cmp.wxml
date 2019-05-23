@@ -1,0 +1,10 @@
+<view class='wrapper'>
+  <view class='text'>
+    <view class='mainTitle'>{{mainTitle}}</view>
+    <view class='subHead'>{{subHead}}</view>
+  </view>
+  <view>
+    <image class='image' src='{{imgSrc}}'></image>
+  </view>
+
+</view>

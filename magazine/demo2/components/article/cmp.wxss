@@ -1,0 +1,36 @@
+/* components/article/cmp.wxss */
+.wrapper{
+  width: 95vw;
+  margin: 30rpx auto;
+  border-top: 2px solid #ccc;
+}
+.wrapper .head{
+  padding:20rpx;
+}
+.wrapper .image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  vertical-align: middle;
+}
+.text{
+  font-size: 28rpx;
+  letter-spacing: 3rpx;
+  color: #666;
+}
+
+.controller-container{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20rpx;
+  margin-top: 10rpx;
+}
+.controller-box{
+  display: flex;
+}
+.box{
+  display: block;
+  margin-left: 25rpx;
+}

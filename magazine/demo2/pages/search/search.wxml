@@ -1,0 +1,15 @@
+<view class='wrapper'>
+<d-search class='search' value='{{value}}'/>
+    <view class='title'>
+        <text class="tag"># {{tag}}</text>
+        <view wx:for='{{recommend}}' class='content'>
+        <text>{{item}}</text>
+        </view>
+    </view>
+    <view>
+    <d-articleList 
+            articleList='{{articleList}}' 
+            more = '{{more}}'
+            word = '{{value}}'/>
+    </view>
+</view>

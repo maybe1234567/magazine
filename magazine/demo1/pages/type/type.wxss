@@ -1,0 +1,62 @@
+@import '/pages/common.wxss';
+.wrapper{
+  background-color: #ddd;
+}
+
+.header{
+  position: relative;
+    width: 100%;
+   height: 400rpx;
+
+
+}
+.header image{
+   width: 100%;
+   height: 100%;
+}
+.header .article-box{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 66%;
+  width: 80%;
+  height: 180rpx;
+  background-color: #fff;
+} 
+.header .article-box text{
+  position: absolute;
+  top: 15rpx;
+  left: 15rpx;
+  font-size: 18px;
+}
+.header .article-box image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.header .article-box .icon{
+  display: flex;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+}
+.header .article-box .icon image{
+  margin: 0 15rpx;
+}
+.header .article-box .icon  .btn {
+  position:relative;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: transparent;
+}
+
+.header .article-box .icon  .btn::after {
+  border: none;
+}
+.header .article-box .icon .btn image{
+  position: absolute;
+  left: -5%;
+  top: 5%;
+} 
+.article-list .extend text{
+  border: none;
+}

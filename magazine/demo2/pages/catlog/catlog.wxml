@@ -1,0 +1,22 @@
+<view class='wrapper'>
+  <d-search value='{{value}}' />
+  <view>
+    <view class='text'>
+      <text class='magazine'>我的杂志</text>
+      <text>管理杂志</text>
+    </view>
+    <d-tag wx:for="{{myMarkList}}" wx:key='tagId' tag="{{item.tag}}" tagId="{{item.tagId}}" />
+    <view class='tag-list' wx:for="{{tagInfoList}}" wx:for-item='tagListItem' wx:key="title">
+      <text>{{tagListItem.title}} ></text>
+      <view>
+        <view wx:for="{{tagListItem.tagList}}" class='tag' wx:key="tag">
+          <text class='tagText'># {{item.tag}} </text>
+          <d-subscribe tag='{{item.tag}}' tagId='{{item.tagId}}' catch:tap='onTap' />
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+
+</view>

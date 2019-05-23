@@ -1,0 +1,11 @@
+<scroll-view scroll-x scroll-into-view="{{activeId}}" scroll-with-animation='true'  android:scrollbars='none' class='wrapper' >
+  
+  <text 
+        class="type {{index === magazineIndex ?  'active'  : '' }}" 
+        wx:for='{{magazineTypeArr}}'
+        wx:key='*this'
+        data-index='{{index}}'
+        bindtap='onTap'
+        id="{{'magazine'+index}}">{{item}}</text>
+
+</scroll-view>

@@ -1,0 +1,12 @@
+   <view class='wrapper'>
+  <view class='big-title'>
+    <text class='date' >{{magazineId == 0 ? date : magazineTypeArr[magazineId]}}</text> 
+  </view>
+  <view class='imageText'>
+  <text class='title'>{{recommend.title}}</text>
+  <image hidden='{{!recommend.imgSrc}}' class='image' src='{{recommend.imgSrc}}'></image>
+  </view>
+  <view class='skeleton' hidden='{{recommend.imgSrc}}'>
+    <view class='loader'></view>
+  </view>
+</view>

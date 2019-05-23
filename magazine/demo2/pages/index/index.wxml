@@ -1,0 +1,12 @@
+<view class='wrapper'>
+<d-nav class='nav'  catch:nav='onNav'/>
+<d-recommend recommend='{{recommendInfo}}' class='recommend' magazineId='{{magazineId}}' />
+<view class='lodin-wrapper' wx:if='{{loading}}'>
+  <d-loading class='loading'/>
+</view>
+<d-tagList markList='{{markList}}'>
+  <d-add slot='before' wx:if='{{magazineId==0}}'/>
+  <d-tag slot='after' class='to-catalog' catchtap='onCatLog' wx:if='{{magazineId==0}}'tag='...'></d-tag>
+</d-tagList>
+<d-articleList articleList='{{articleList}}' more='{{getMore}}' magazineId='{{magazineId}}' />
+</view>

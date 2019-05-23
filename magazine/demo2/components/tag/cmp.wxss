@@ -1,0 +1,10 @@
+/* components/tag/cmp.wxss */
+
+.wrapper{
+  margin:10rpx;
+  border-radius: 10rpx;
+  border: 1px solid #000;
+  padding: 10rpx;
+  font-size: 28rpx;
+  display: inline-block;
+}

@@ -1,0 +1,17 @@
+.wrapper{
+  padding: 5rpx 0;
+}
+.wrapper .article{
+  display: block;
+  margin: 20rpx;
+}
+.wrapper .box{
+  text-align: center;
+  color: #000;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+.wrapperBox{
+  padding-top: 5rpx;
+
+}

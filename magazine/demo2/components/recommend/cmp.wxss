@@ -1,0 +1,65 @@
+.wrapper{
+  width: 750rpx;
+  height: 450rpx;
+}
+.wrapper .big-title{
+ text-align: center;
+  position: relative;
+}
+.wrapper .big-title .date{
+  font-size: 50rpx;
+  letter-spacing: 10rpx;
+}
+.wrapper .big-title .date::after{
+  width: 120rpx;
+  height: 5rpx;
+  background-color: #ccc;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-60rpx);
+  margin-top: 20rpx;
+}
+.wrapper .imageText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .title{
+  position: relative;
+  top: 30rpx;
+  font-size: 30rpx;
+}
+.wrapper .image, .skeletion{
+  display: block;
+  position: relative;
+  top: 40rpx;
+  width: 80vw;
+  height: 300rpx;
+}
+.skeletion{
+  position: relative;
+  background-color: rgba(0, 0, 0, .3)
+}
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20rpx;
+  margin-left: -20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border: 10rpx solid #888;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  animation: 1s loading   linear infinite;
+}
+@keyframes loading {
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}

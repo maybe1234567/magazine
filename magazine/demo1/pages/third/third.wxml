@@ -1,0 +1,47 @@
+<!-- pages/third/third.wxml -->
+<view class='content'>
+  <view class='wrapper'>
+    <view class='article'>
+      <text class='date'>{{recommend.date}}</text>
+      <text class='review'>{{recommend.title}}</text>
+      <image mode='widthFix' src="{{recommend.imgSrc}}"></image>
+    </view>
+    <view class='list'>
+      <text class='active'>+</text>
+      <text bindtap='getTapId' data-typeId= '{{item.typeId}}'  wx:for='{{type}}' wx:key='type'>{{item.type}}</text>
+      <text>...</text>
+    </view>
+  </view>
+  <view class='article-list'   wx:for="{{article}}" wx:key='articleImgSrc'>
+    <view class='mark'>
+      <image mode='widthFix' src='{{item.markPeopleAvatar}}'></image>
+      <text>{{item.markPeople}}</text>
+      <text>等</text>
+      <text>{{item.markCount}}人</text>
+      <text>mark了</text>
+    </view>
+    <view class='image' bindtap='articleId' data-id = '{{item.id}}'>
+      <image src="{{item.articleImgSrc}}"></image>
+    </view>
+    <view class='title'>
+      <text>{{item.articleTitle}}</text>
+    </view>
+    <view class='extend'>
+      <text>{{item.articleType}}</text>
+      <view class='progress'>
+        <view>
+          <image mode='widthFix' data-id='{{item.articleType}}' bindtap='getMore' src='/image/icon/Icon_more.png'></image>
+        </view>
+        <view>
+          <button class='share-btn' open-type='share'>
+            <image mode='widthFix' src='/image/icon/Icon_relay.png'></image>
+          </button>
+        </view>
+        <view>
+          <image bindtap='like' data-index='{{index}}' wx:if='{{likeData[index]==true}}' mode='widthFix' src='/image/icon/Icon_circle_fill.png'></image>
+          <image bindtap='like' data-index='{{index}}' wx:else mode='widthFix' src='/image/icon/Icon_circle.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
